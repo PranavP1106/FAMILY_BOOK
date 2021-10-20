@@ -1,0 +1,41 @@
+
+<html>
+    <head>
+        <title>My Family Book</title>
+        <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=yvEQHfv22AaSjGUcV_TLjhRBk9RqBtofeWwl1zcKXwe1NRAivyknFT2aXttTdgDrOct9-vKtvJMT3JhFmlY5Tg" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9kZXZhMjAwOS5naXRodWIuaW8vUHJvamVjdC03OC8"/></head>
+
+    <body>
+        <center>
+            <div>
+                <h1>My Family Book</h1>
+                <img id="photo" src="FAMILY.jpg">
+                <br>
+                <br>
+                <label id="Name_Display"></label>
+                 <br>
+                <br>
+                <button id="next_button" onclick="next_member()">Next</button>
+            </div> 
+        </center>
+    </body>
+
+    <script>
+        var names=["Prasanna Premkumar","Akila Prasanna","Pranav Prasanna","Naraen Prasanna","Suriyakala"];
+        
+        var images=["DAD.jpg","MOM.jpg","SON.png","BROTHER.png","GRANNY.jpg"];
+        
+        var i=0;
+        function next_member(){
+                document.getElementById("photo").src=images[i];
+                document.getElementById("Name_Display").innerHTML=names[i];
+                i++;
+
+                if(i == 5)
+                {
+                    i=0;
+                }
+        }
+
+    </script>
+</html>
